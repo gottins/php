@@ -41,9 +41,10 @@ class Gun {
             $this->currentMagazine--;
             echo "武器名: " . $this->name . "\n";
             echo "残弾数: " . $this->currentMagazine . "\n";
-        if ($this->currentMagazine == 0){
-            echo "リロードしてください" . "\n";
-    }
+            
+            if ($this->currentMagazine == 0){
+                echo "リロードしてください" . "\n";
+            }
         }
         else {
             echo "リロードしてください" . "\n";
